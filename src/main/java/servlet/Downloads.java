@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Downloads
  */
-@WebServlet("/downloads")
+@WebServlet("/Downloads")
 public class Downloads extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,13 +32,12 @@ public class Downloads extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		res.setContentType("application/octet-stream");
         ServletContext ctx = getServletContext();
-        
+        res.setHeader("Content-Disposition","attachment;filename=".concat("drugs"));
         try {
             InputStream in = ctx.getResourceAsStream("/drugs.db");
             int read = 0;
             byte[] buffer = new byte[1024];
             OutputStream out = res.getOutputStream();
-            
             while((read=in.read(buffer))!= -1)
                 out.write(buffer, 0, read);
             out.flush();
