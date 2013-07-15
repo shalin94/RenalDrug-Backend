@@ -1,0 +1,73 @@
+<project name="RenalDrug-Backend" default="main">
+	<property name="tomcat.home.dir" value="${basedir}/thirdparty/apache-tomcat-7.0.42"/>
+	<property name="tomcat.bin.dir" value="${tomcat.home.dir}/bin"/>
+
+	<property name="src.dir" value="${basedir}/src"/>
+	<property name="java.src.dir" value="${basedir}/src/main/java"/>
+	<property name="lib.dir" value="${basedir}/thirdparty"/>
+
+	<property name="dist.dir" value="${basedir}/dist"/>
+	<property name="build.dir" value="${basedir}/build"/>
+	<property name="build.resources.dir" value="${build.dir}/META-INF/resources"/>
+	<property name="classes.dir" value="${build.dir}/WEB-INF/classes"/>
+	<property name="deploy.dir" value="${tomcat.home.dir}/webapps"/>
+
+	<path id="lib.path">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="servlet.jar.path">
+		<fileset dir="${tomcat.home.dir}/lib">
+			<include name="servlet-api.jar"/>
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${deploy.dir}/${ant.project.name}"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${java.src.dir}" destdir="${classes.dir}">
+			<exclude name="**/launch/*.java"/>
+			<classpath>
+				<path refid="lib.path"/>
+				<path refid="servlet.jar.path"/>
+			</classpath>
+		</javac>
+		<copy file="${basedir}/database/drugs.db" todir="${classes.dir}"/>
+	</target>
+
+	<target name="war" depends="compile">
+		<mkdir dir="${dist.dir}"/>
+		<war webxml="${src.dir}/web/WEB-INF/web.xml" destfile="${dist.dir}/${ant.project.name}.war">
+			<fileset dir="${build.dir}">
+				<include name="**/*"/>
+			</fileset>
+		</war>
+	</target>
+
+	<target name="deploy" depends="war">
+		<copy file="${dist.dir}/${ant.project.name}.war" todir="${deploy.dir}"/>
+	</target>
+
+	<target name="run" depends="deploy">
+		<exec executable="bash" >
+			<arg value="-c" />
+			<arg value="${tomcat.bin.dir}/catalina.sh run"/>
+		</exec>
+	</target>
+
+	<target name="run-debug" depends="war">
+		<exec executable="bash" >
+			<arg value="-c" />
+			<arg value="${tomcat.bin.dir}/catalina.sh jpda run"/>
+		</exec>
+	</target>
+
+	<target name="main" depends="clean,run"/>
+</project>
