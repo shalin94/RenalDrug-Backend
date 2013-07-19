@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import java.net.*;
-@WebServlet(name = "sqltest", urlPatterns={"/"})
+@WebServlet("/sqltest")
 public class ConnectSQLite extends HttpServlet {
 
 
@@ -31,11 +31,12 @@ public class ConnectSQLite extends HttpServlet {
 		Statement statement = null;
 		ServletContext servletContext = getServletContext();
 		URL resU = servletContext.getResource("drugs.db");
+		String string = getServletContext().getRealPath("WEB-INF/classes/drugs.db");
 		PrintWriter out=res.getWriter();
 
 		try {
 			Class.forName("org.sqlite.JDBC");
-			connection = DriverManager.getConnection("jdbc:sqlite:"+resU);
+			connection = DriverManager.getConnection("jdbc:sqlite:"+string);
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery("SELECT * FROM medicines");
 			out.println("<html>");

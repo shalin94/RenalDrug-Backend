@@ -32,7 +32,7 @@
 
 	<target name="compile">
 		<mkdir dir="${classes.dir}"/>
-		<javac srcdir="${java.src.dir}" destdir="${classes.dir}">
+		<javac srcdir="${java.src.dir}" destdir="${classes.dir}" debug="on">
 			<exclude name="**/launch/*.java"/>
 			<classpath>
 				<path refid="lib.path"/>
@@ -40,6 +40,7 @@
 			</classpath>
 		</javac>
 		<copy file="${basedir}/database/drugs.db" todir="${classes.dir}"/>
+		<copy file="${java.src.dir}/servlet/sql.jsp" todir="${build.dir}"/>
 	</target>
 
 	<target name="war" depends="compile">
