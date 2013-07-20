@@ -1,0 +1,361 @@
+Jul 19, 2013 5:41:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 19, 2013 5:41:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 19, 2013 5:41:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@5db5d76e')
+Jul 19, 2013 5:42:27 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 8 in the jsp file: /test.jsp
+ResultSet cannot be resolved to a type
+5: 	<body>
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+
+
+An error occurred at line: 9 in the jsp file: /test.jsp
+The method ConnectDatabse() is undefined for the type ConnectSQLite
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+
+
+An error occurred at line: 10 in the jsp file: /test.jsp
+The field ConnectSQLite.statement is not visible
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+
+
+An error occurred at line: 12 in the jsp file: /test.jsp
+_id cannot be resolved to a variable
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+14: 			}
+15: 			rs.close();
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 8 in the jsp file: /test.jsp
+ResultSet cannot be resolved to a type
+5: 	<body>
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+
+
+An error occurred at line: 9 in the jsp file: /test.jsp
+The method ConnectDatabse() is undefined for the type ConnectSQLite
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+
+
+An error occurred at line: 10 in the jsp file: /test.jsp
+The field ConnectSQLite.statement is not visible
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+
+
+An error occurred at line: 12 in the jsp file: /test.jsp
+_id cannot be resolved to a variable
+9: 			sql.ConnectDatabse();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+14: 			}
+15: 			rs.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 19, 2013 5:44:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 19, 2013 5:44:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 19, 2013 5:44:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 19, 2013 5:44:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 19, 2013 5:44:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@425dfbfc')
+Jul 19, 2013 5:44:15 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /test.jsp
+The field ConnectSQLite.statement is not visible
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+
+
+An error occurred at line: 11 in the jsp file: /test.jsp
+next cannot be resolved or is not a field
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+14: 			}
+
+
+An error occurred at line: 12 in the jsp file: /test.jsp
+_id cannot be resolved to a variable
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+14: 			}
+15: 			rs.close();
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /test.jsp
+The field ConnectSQLite.statement is not visible
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+
+
+An error occurred at line: 11 in the jsp file: /test.jsp
+next cannot be resolved or is not a field
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+14: 			}
+
+
+An error occurred at line: 12 in the jsp file: /test.jsp
+_id cannot be resolved to a variable
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next) {
+12: 				int id = rs.getInt(_id);
+13: 				out.println(id);
+14: 			}
+15: 			rs.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 19, 2013 5:45:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 19, 2013 5:45:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 19, 2013 5:45:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 19, 2013 5:45:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 19, 2013 5:45:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@6cfb7989')
+Jul 19, 2013 5:45:08 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /test.jsp
+The field ConnectSQLite.statement is not visible
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next()) {
+12: 				int id = rs.getInt("_id");
+13: 				out.println(id);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /test.jsp
+The field ConnectSQLite.statement is not visible
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next()) {
+12: 				int id = rs.getInt("_id");
+13: 				out.println(id);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 19, 2013 5:45:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 19, 2013 5:45:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 19, 2013 5:45:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 19, 2013 5:45:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 19, 2013 5:45:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@32f4236c')
+Jul 19, 2013 5:45:38 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [An exception occurred processing JSP page /test.jsp at line 7
+
+4: <html>
+5: 	<body>
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at javax.servlet.GenericServlet.getServletContext(GenericServlet.java:125)
+	at servlet.ConnectSQLite.<init>(ConnectSQLite.java:29)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:71)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 19, 2013 5:47:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 19, 2013 5:47:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
