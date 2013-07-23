@@ -58,7 +58,7 @@ public class ConnectSQLite extends HttpServlet{
 			e.printStackTrace();
 		}
 	}*/
-	public void ConnectDatabase()	{
+	public void connectDatabase()	{
 		try {
 			Class.forName("org.sqlite.JDBC");
 			connection = DriverManager.getConnection("jdbc:sqlite:"+path);

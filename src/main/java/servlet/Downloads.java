@@ -34,7 +34,6 @@ public class Downloads extends HttpServlet {
         ServletContext ctx = getServletContext();
         res.setHeader("Content-Disposition","attachment;filename=".concat("drugs.db"));
         try {
-//            InputStream in = ctx.getResourceAsStream("/drugs.db");
             InputStream in = Thread.currentThread().getContextClassLoader().getResourceAsStream("/drugs.db");
             int read = 0;
             byte[] buffer = new byte[1024];

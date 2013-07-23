@@ -47,6 +47,7 @@
 	<target name="war" depends="compile">
 		<mkdir dir="${dist.dir}"/>
 		<war webxml="${src.dir}/web/WEB-INF/web.xml" destfile="${dist.dir}/${ant.project.name}.war">
+			<metainf file="${src.dir}/web/META-INF/context.xml" />
 			<fileset dir="${build.dir}">
 				<include name="**/*"/>
 			</fileset>

@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:25:28 -0700] "GET /Downloads HTTP/1.1" 404 969
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:25:29 -0700] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:25:40 -0700] "GET /RenalDrug-Backend/Download HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:25:42 -0700] "GET /RenalDrug-Backend/Downloads HTTP/1.1" 200 7181
+127.0.0.1 - - [21/Jul/2013:23:34:55 -0700] "GET /RenalDrug-Backend/Downloads HTTP/1.1" 200 7181
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:47:49 -0700] "GET /RenalDrug-Backend/ HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:47:54 -0700] "GET /RenalDrug-Backend/sqlite HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:48:18 -0700] "GET /RenalDrug-Backend/HelloServlet HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:50:10 -0700] "GET /RenalDrug-Backend/ HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [21/Jul/2013:23:50:14 -0700] "GET /RenalDrug-Backend/ HTTP/1.1" 200 -
