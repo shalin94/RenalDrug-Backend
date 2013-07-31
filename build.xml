@@ -40,7 +40,7 @@
 			</classpath>
 		</javac>
 		<copy file="${basedir}/database/drugs.db" todir="${classes.dir}"/>
-		<copy file="${java.src.dir}/servlet/recent.jsp" todir="${build.dir}"/>
+		<copy file="${java.src.dir}/dao/recent.jsp" todir="${build.dir}"/>
 		<copy file="${java.src.dir}/servlet/sql.jsp" todir="${build.dir}"/>
 	</target>
 
