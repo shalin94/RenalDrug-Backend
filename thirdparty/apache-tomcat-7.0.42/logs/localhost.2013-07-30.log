@@ -1,0 +1,292 @@
+Jul 30, 2013 4:55:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 30, 2013 4:55:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 30, 2013 4:55:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@22f1432b')
+Jul 30, 2013 4:55:57 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 9 in the jsp file: /test.jsp
+The method ConnectDatabase() is undefined for the type ConnectSQLite
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next()) {
+12: 				int id = rs.getInt("_id");
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 9 in the jsp file: /test.jsp
+The method ConnectDatabase() is undefined for the type ConnectSQLite
+6: 		<%
+7: 			ConnectSQLite sql = new ConnectSQLite();
+8: 			ResultSet rs = null;
+9: 			sql.ConnectDatabase();
+10: 			rs = sql.statement.executeQuery("SELECT * FROM medicines");
+11: 			while(rs.next()) {
+12: 				int id = rs.getInt("_id");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 30, 2013 4:57:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 30, 2013 4:57:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 30, 2013 4:57:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 30, 2013 4:57:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 30, 2013 4:57:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@224e59d9')
+Jul 30, 2013 4:57:08 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 15 in the jsp file: /recent.jsp
+ArrayList cannot be resolved to a type
+12: 		</TR>
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+
+
+An error occurred at line: 16 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+
+
+An error occurred at line: 16 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+
+
+An error occurred at line: 16 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+
+
+An error occurred at line: 17 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+20: 				out.println("<td>"+mb.getDosageType()+"</td>");
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 15 in the jsp file: /recent.jsp
+ArrayList cannot be resolved to a type
+12: 		</TR>
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+
+
+An error occurred at line: 16 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+
+
+An error occurred at line: 16 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+
+
+An error occurred at line: 16 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+13: 		<%
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+
+
+An error occurred at line: 17 in the jsp file: /recent.jsp
+i cannot be resolved to a variable
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+20: 				out.println("<td>"+mb.getDosageType()+"</td>");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 30, 2013 4:58:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 30, 2013 4:58:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 30, 2013 4:58:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 30, 2013 4:58:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 30, 2013 4:58:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@f6096f9')
+Jul 30, 2013 4:58:24 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [An exception occurred processing JSP page /recent.jsp at line 17
+
+14: 			DatabaseBean db = new DatabaseBean();
+15: 			ArrayList<MedicineBean> list = db.connect();
+16: 			for(int i=0;i<10;i++){
+17: 				MedicineBean mb = list.get(i);
+18: 				out.println("<TR>");
+19: 				out.println("<td>"+mb.getName()+"</td>");
+20: 				out.println("<td>"+mb.getDosageType()+"</td>");
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 9, Size: 9
+	at java.util.ArrayList.rangeCheck(ArrayList.java:604)
+	at java.util.ArrayList.get(ArrayList.java:382)
+	at org.apache.jsp.recent_jsp._jspService(recent_jsp.java:83)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Jul 30, 2013 4:59:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 30, 2013 4:59:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 30, 2013 4:59:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 30, 2013 4:59:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 30, 2013 4:59:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1bf55430')
+Jul 30, 2013 5:01:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 30, 2013 5:01:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 30, 2013 5:01:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 30, 2013 5:01:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 30, 2013 5:01:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@16c0e844')
+Jul 30, 2013 5:02:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 30, 2013 5:02:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
