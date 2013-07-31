@@ -1,4 +1,4 @@
-<%@ page language = "java" contentType = "text/html" import = "dao.*, java.io.*, java.sql.*,java.util.*" %>
+<%@ page language = "java" contentType = "text/html" import = "dao.*, java.io.*, java.sql.*,java.util.*,org.apache.commons.lang3.*" %>
 <html>
 	<body>
 		<TABLE border = "1" align="center" cellpadding="10">
@@ -16,7 +16,7 @@
 			for(int i=0;i<list.size();i++){
 				Medicine med = list.get(i);
 				out.println("<TR>");
-				out.println("<td>"+med.getName()+"</td>");
+				out.println("<td>"+escapeHtml4(med.getName())+"</td>");
 				out.println("<td>"+med.getDosageType()+"</td>");
 				out.println("<td>"+med.getDosageSubType()+"</td>");
 				out.println("<td>"+med.getDosageValue()+"</td>");

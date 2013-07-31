@@ -35,7 +35,7 @@ public class DBHelper{
 	public List<Medicine> getRecentMedicines(){
 		List<Medicine> medlist = null;
 		Connection conn = null;
-		String query = "select m.medicine_name, d.description, dst.dosage_sub_type_description,md.dosage_value, m.date_created, m.date_modified from medicine_dosage md, medicines m, dosage_types d, dosage_sub_types dst where md.medicine_id = m._id and md.dosage_type_id = d._id and md.dosage_sub_type_id = dst._id order by m.date_modified DESC";
+		String query = "select m.medicine_name, d.description, dst.dosage_sub_type_description,md.dosage_value, md.date_created, md.date_modified from medicine_dosage md, medicines m, dosage_types d, dosage_sub_types dst where md.medicine_id = m._id and md.dosage_type_id = d._id and md.dosage_sub_type_id = dst._id order by md.date_modified DESC";
 		try{
 			conn = this.getConnection();
 			Statement stat = conn.createStatement();
@@ -64,5 +64,29 @@ public class DBHelper{
 			}
 		}
 		return medlist;
+	}
+
+	public String getCurrentTimeStamp(){
+		Connection conn = null;
+		String time = null
+		try{
+			conn = this.getConnection();
+			Statement stat = conn.createStatement();
+			ResultSet rs = stat.executeQuery("SELECT datetime('now')");
+			while(rs.next()){
+				time = rs.getString(0);
+			}
+		}catch(Exception e){
+			System.err.println("Could not get date time" + e);
+		}finally{
+			if (conn != null){
+				try{
+					conn.close();
+				}catch(Exception e){
+					System.err.println("Could not close connection" + e);
+				}
+			}
+		}
+		return time;
 	}
 }
