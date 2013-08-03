@@ -741,3 +741,84 @@ Aug 02, 2013 9:44:32 PM org.apache.catalina.core.ApplicationContext log
 INFO: SessionListener: contextInitialized()
 Aug 02, 2013 9:44:32 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@587b6c50')
+Aug 02, 2013 10:24:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 10:24:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 10:24:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 10:24:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 10:24:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@3d3b10b1')
+Aug 02, 2013 10:24:48 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 47 in the jsp file: /InsertData.jsp
+Syntax error, insert ";" to complete Statement
+44: 	}
+45: 	if (status == 1){
+46: 		out.println("<TABLE border=\"0\" align=\"center\" cellpadding=\"10\">");
+47: 		out.println("<TR><TD align=\"center\" colspan=\"2\">Successful in Inserting the Following Data:</TD></TR>")
+48: 		out.println("<TR><TD>Medicine Name:</TD>");
+49: 		out.println("<TD>"+data.getName()+"</TD></TR>");
+50: 		out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\"colspan=\"2\"><font color=\"WHITE\">Dose in Normal Renal Function:</font></TD></TR>");
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 47 in the jsp file: /InsertData.jsp
+Syntax error, insert ";" to complete Statement
+44: 	}
+45: 	if (status == 1){
+46: 		out.println("<TABLE border=\"0\" align=\"center\" cellpadding=\"10\">");
+47: 		out.println("<TR><TD align=\"center\" colspan=\"2\">Successful in Inserting the Following Data:</TD></TR>")
+48: 		out.println("<TR><TD>Medicine Name:</TD>");
+49: 		out.println("<TD>"+data.getName()+"</TD></TR>");
+50: 		out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\"colspan=\"2\"><font color=\"WHITE\">Dose in Normal Renal Function:</font></TD></TR>");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 10:25:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 10:25:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 10:25:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 10:25:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 10:25:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@710ce358')
+Aug 02, 2013 10:28:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 10:28:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()

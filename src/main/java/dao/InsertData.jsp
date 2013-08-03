@@ -42,7 +42,29 @@
 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>");
 		}
 	}
-	if (status == 1) out.println("Successful in  inserting all data");
+	if (status == 1){
+		out.println("<TABLE border=\"0\" align=\"center\" cellpadding=\"10\">");
+		out.println("<TR><TD align=\"center\" colspan=\"2\"><h1>Successful in Inserting the Following Data:</h1></TD></TR>");
+		out.println("<TR><TD>Medicine Name:</TD>");
+		out.println("<TD>"+data.getName()+"</TD></TR>");
+		out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\"colspan=\"2\"><font color=\"WHITE\">Dose in Normal Renal Function:</font></TD></TR>");
+		out.println("<TR><TD colspan=\"2\">"+dv[0]+"</TD></TR>");	
+		out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\"colspan=\"2\"><font color=\"WHITE\">Dose in Renal Impairment:</font></TD></TR>");
+		for(int i=1;i<4;i++){
+			out.println("<TR><TD>"+dst[i]+"</TD><TD>"+dv[i]+"</TD></TR>");
+		}
+		out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\"colspan=\"2\"><font color=\"WHITE\">Dose in Renal Replacement Therapy:</font></TD></TR>");
+		for(int i=4;i<9;i++){
+			out.println("<TR><TD>"+dst[i]+"</TD><TD>"+dv[i]+"</TD></TR>");
+		}
+		out.println("</TABLE>");
+	}
 %>
+<CENTER>
+<FORM METHOD=POST ACTION="form.jsp">
+<INPUT ALIGN="CENTER"TYPE="SUBMIT" VALUE="Insert new Medicine">
+</FORM>
+</CENTER>
+
 <BODY>
 </HTML>
