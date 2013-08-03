@@ -41,6 +41,9 @@
 		</javac>
 		<copy file="${basedir}/database/drugs.db" todir="${classes.dir}"/>
 		<copy file="${java.src.dir}/dao/recent.jsp" todir="${build.dir}"/>
+		<copy file="${java.src.dir}/dao/InsertData.jsp" todir="${build.dir}"/>
+		<copy file="${java.src.dir}/dao/form.jsp" todir="${build.dir}"/>	
+		<copy file="${java.src.dir}/dao/SaveData.jsp" todir="${build.dir}"/>	
 		<copy file="${java.src.dir}/servlet/sql.jsp" todir="${build.dir}"/>
 	</target>
 

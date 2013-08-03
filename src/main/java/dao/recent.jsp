@@ -12,9 +12,12 @@
 		</TR>
 		<%
 			DBHelper db = DBHelper.getInstance();
-			List<Medicine> list = db.getRecentMedicines();
-			for(int i=0;i<list.size();i++){
-				Medicine med = list.get(i);
+			List<MedicineDosage> list = db.getRecentMedicines();
+			int count = 10;
+			if(list.size()<10)
+				count = list.size();
+			for(int i=0;i<count;i++){
+				MedicineDosage med = list.get(i);
 				out.println("<TR>");
 				out.println("<td>"+med.getName()+"</td>");
 				out.println("<td>"+med.getDosageType()+"</td>");
@@ -26,5 +29,9 @@
 			} 
 		%>
 		</TABLE>
+		<%
+			String time = db.getCurrentTimeStamp();
+			out.println("<h1>"+time+"</h1>");
+		%>
 	</body>
 </html>

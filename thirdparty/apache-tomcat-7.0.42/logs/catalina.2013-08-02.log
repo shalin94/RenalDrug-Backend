@@ -1,0 +1,754 @@
+Aug 02, 2013 12:01:49 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 12:01:49 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 12:01:49 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 12:01:49 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 12:01:49 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 12:01:49 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 12:01:49 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 12:01:52 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 12:01:52 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 12:01:52 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 12:01:52 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 543 ms
+Aug 02, 2013 12:01:52 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 12:01:52 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 12:01:52 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 12:01:53 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [204] milliseconds.
+Aug 02, 2013 12:01:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 12:01:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 12:01:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 12:01:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 12:01:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 12:01:53 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 12:01:53 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 12:01:53 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 957 ms
+Aug 02, 2013 4:37:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:37:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:37:42 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 4:37:42 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:37:42 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:37:42 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:37:42 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:41:14 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 4:41:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:41:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:41:14 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 592 ms
+Aug 02, 2013 4:41:14 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 4:41:14 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 4:41:14 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 4:41:15 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [174] milliseconds.
+Aug 02, 2013 4:41:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 4:41:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 4:41:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 4:41:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 4:41:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 4:41:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:41:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:41:15 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 940 ms
+Aug 02, 2013 4:45:35 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:45:35 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:45:35 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 4:45:35 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:45:35 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:45:35 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:45:35 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:45:38 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 4:45:38 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:45:38 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:45:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 505 ms
+Aug 02, 2013 4:45:38 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 4:45:38 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 4:45:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 4:45:39 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [158] milliseconds.
+Aug 02, 2013 4:45:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 4:45:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 4:45:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 4:45:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 4:45:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 4:45:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 4:45:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 4:45:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 854 ms
+Aug 02, 2013 5:13:44 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:13:44 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:13:44 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:13:44 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:13:44 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:13:44 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:13:44 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:14:37 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:14:38 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:14:38 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 481 ms
+Aug 02, 2013 5:14:38 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:14:38 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:14:38 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [190] milliseconds.
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:14:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:14:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:14:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:14:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 867 ms
+Aug 02, 2013 5:15:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:15:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:15:42 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:15:42 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:15:42 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:15:42 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:15:42 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:15:45 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:15:45 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:15:45 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:15:45 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 482 ms
+Aug 02, 2013 5:15:45 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:15:45 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:15:45 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:15:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:15:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:15:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:15:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:15:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:15:46 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:15:46 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:15:46 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 687 ms
+Aug 02, 2013 5:17:08 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:17:08 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:17:08 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:17:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:17:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:17:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:17:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:17:11 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:17:11 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:17:11 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:17:11 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 487 ms
+Aug 02, 2013 5:17:11 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:17:11 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:17:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:17:12 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [153] milliseconds.
+Aug 02, 2013 5:17:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:17:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:17:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:17:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:17:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:17:12 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:17:12 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:17:12 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 879 ms
+Aug 02, 2013 5:18:38 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:18:38 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:18:38 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:18:38 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:18:38 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:18:38 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:18:38 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:18:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:18:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:18:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:18:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 487 ms
+Aug 02, 2013 5:18:40 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:18:40 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:18:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:18:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:18:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:18:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:18:41 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 697 ms
+Aug 02, 2013 5:23:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:23:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:23:23 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:23:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:23:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:23:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:23:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:23:25 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:23:25 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:23:25 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:23:25 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 483 ms
+Aug 02, 2013 5:23:25 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:23:25 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:23:25 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:23:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:23:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:23:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:23:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:23:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:23:26 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:23:26 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:23:26 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 685 ms
+Aug 02, 2013 5:39:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:39:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:39:46 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:39:46 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:39:46 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:39:46 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:39:46 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:39:49 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:39:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:39:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:39:49 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 495 ms
+Aug 02, 2013 5:39:49 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:39:49 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:39:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:39:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:39:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:39:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:39:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:39:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:39:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:39:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:39:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 750 ms
+Aug 02, 2013 5:40:44 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:40:44 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:40:44 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:40:44 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:40:44 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:40:44 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:40:44 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:40:46 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:40:46 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:40:46 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:40:46 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 489 ms
+Aug 02, 2013 5:40:46 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:40:46 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:40:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:40:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:40:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:40:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:40:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:40:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:40:47 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:40:47 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:40:47 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 704 ms
+Aug 02, 2013 5:46:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:46:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:46:45 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 5:46:45 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+Aug 02, 2013 5:46:46 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+Aug 02, 2013 5:46:47 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+Aug 02, 2013 5:46:47 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/RenalDrug-Backend] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+Aug 02, 2013 5:46:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:46:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:46:47 PM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load java.lang.StringBuilder.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1600)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1559)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:126)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.jsp.InsertData_jsp._jspService(InsertData_jsp.java:115)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 5:46:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:46:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:46:47 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 5:46:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:46:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 470 ms
+Aug 02, 2013 5:46:48 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 5:46:48 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 5:46:48 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [172] milliseconds.
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 5:46:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 5:46:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 5:46:48 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 892 ms
+Aug 02, 2013 6:10:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 6:10:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 6:10:56 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 6:10:56 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+Aug 02, 2013 6:10:57 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+Aug 02, 2013 6:10:58 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+Aug 02, 2013 6:10:58 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/RenalDrug-Backend] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+Aug 02, 2013 6:10:58 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 6:10:58 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 6:10:58 PM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load java.lang.StringBuilder.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1600)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1559)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:126)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.jsp.InsertData_jsp._jspService(InsertData_jsp.java:115)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 6:10:58 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 6:10:58 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 6:12:49 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 6:12:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 6:12:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 6:12:49 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 502 ms
+Aug 02, 2013 6:12:49 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 6:12:49 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 6:12:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 6:12:50 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [200] milliseconds.
+Aug 02, 2013 6:12:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 6:12:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 6:12:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 6:12:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 6:12:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 6:12:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 6:12:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 6:12:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 933 ms
+Aug 02, 2013 9:38:39 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:38:39 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:38:39 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 9:38:39 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:38:39 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:38:39 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:38:39 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:04 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 9:42:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:05 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 592 ms
+Aug 02, 2013 9:42:05 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 9:42:05 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 9:42:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 9:42:05 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [223] milliseconds.
+Aug 02, 2013 9:42:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 9:42:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 9:42:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 9:42:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 9:42:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 9:42:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1016 ms
+Aug 02, 2013 9:42:09 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:09 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:09 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 9:42:09 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:09 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:09 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:09 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:14 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 9:42:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:14 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 491 ms
+Aug 02, 2013 9:42:14 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 9:42:14 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 9:42:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 9:42:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:42:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:42:15 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 725 ms
+Aug 02, 2013 9:44:26 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:44:26 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:44:26 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 02, 2013 9:44:26 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:44:26 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:44:26 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:44:26 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:44:31 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/SRS/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Aug 02, 2013 9:44:31 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:44:31 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:44:31 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 517 ms
+Aug 02, 2013 9:44:31 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 02, 2013 9:44:31 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 02, 2013 9:44:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/RenalDrug-Backend.war
+Aug 02, 2013 9:44:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/docs
+Aug 02, 2013 9:44:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/examples
+Aug 02, 2013 9:44:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/host-manager
+Aug 02, 2013 9:44:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/manager
+Aug 02, 2013 9:44:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/SRS/Documents/workspace/stream/thirdparty/apache-tomcat-7.0.42/webapps/ROOT
+Aug 02, 2013 9:44:32 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 02, 2013 9:44:32 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 02, 2013 9:44:32 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 763 ms

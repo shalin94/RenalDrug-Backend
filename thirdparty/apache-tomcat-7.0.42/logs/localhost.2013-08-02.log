@@ -1,0 +1,743 @@
+Aug 02, 2013 12:01:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 12:01:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 12:01:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 12:01:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 12:01:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@17e87b37')
+Aug 02, 2013 4:37:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 4:37:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 4:41:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 4:41:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 4:41:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@32ac3d9a')
+Aug 02, 2013 4:45:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 4:45:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 4:45:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 4:45:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 4:45:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@587b6c50')
+Aug 02, 2013 5:13:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:13:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:14:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:14:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:14:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1266ada9')
+Aug 02, 2013 5:14:47 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 9 in the jsp file: /SaveData.jsp
+The method getDv() is undefined for the type FormData
+6: <TR><TD colspan="2"align="center"><H1>Please check if the data entered below is correct!</H1></TD></TR>
+7: <%
+8: 	out.println("<TR><TD>Medicine Name:</TD><TD>" + data.getName()+"</TD></TR>");
+9: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Normal Function: </font></TD></TR><TR><TD colspan=\"2\">" + data.getDv()+"</TD></TR>");
+10: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Renal Impairment:</font></TD></TR><TR><TD>"+ data.getDst() + ": </TD><TD>" + data.getDv2()+"</TD></TR>");
+11: 	out.println("<TR><TD>"+ data.getDst2() + ": </TD><TD>" + data.getDv3()+"</TD></TR>");
+12: 	out.println("<TR><TD>"+ data.getDst3() + ": </TD><TD>" + data.getDv4()+"</TD></TR>");
+
+
+An error occurred at line: 10 in the jsp file: /SaveData.jsp
+The method getDst() is undefined for the type FormData
+7: <%
+8: 	out.println("<TR><TD>Medicine Name:</TD><TD>" + data.getName()+"</TD></TR>");
+9: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Normal Function: </font></TD></TR><TR><TD colspan=\"2\">" + data.getDv()+"</TD></TR>");
+10: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Renal Impairment:</font></TD></TR><TR><TD>"+ data.getDst() + ": </TD><TD>" + data.getDv2()+"</TD></TR>");
+11: 	out.println("<TR><TD>"+ data.getDst2() + ": </TD><TD>" + data.getDv3()+"</TD></TR>");
+12: 	out.println("<TR><TD>"+ data.getDst3() + ": </TD><TD>" + data.getDv4()+"</TD></TR>");
+13: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Renal Replacement Therapy:</font> </TD></TR><TR><TD>"+ data.getDst4() + ": </TD><TD>" + data.getDv5()+"</TD></TR>");
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 9 in the jsp file: /SaveData.jsp
+The method getDv() is undefined for the type FormData
+6: <TR><TD colspan="2"align="center"><H1>Please check if the data entered below is correct!</H1></TD></TR>
+7: <%
+8: 	out.println("<TR><TD>Medicine Name:</TD><TD>" + data.getName()+"</TD></TR>");
+9: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Normal Function: </font></TD></TR><TR><TD colspan=\"2\">" + data.getDv()+"</TD></TR>");
+10: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Renal Impairment:</font></TD></TR><TR><TD>"+ data.getDst() + ": </TD><TD>" + data.getDv2()+"</TD></TR>");
+11: 	out.println("<TR><TD>"+ data.getDst2() + ": </TD><TD>" + data.getDv3()+"</TD></TR>");
+12: 	out.println("<TR><TD>"+ data.getDst3() + ": </TD><TD>" + data.getDv4()+"</TD></TR>");
+
+
+An error occurred at line: 10 in the jsp file: /SaveData.jsp
+The method getDst() is undefined for the type FormData
+7: <%
+8: 	out.println("<TR><TD>Medicine Name:</TD><TD>" + data.getName()+"</TD></TR>");
+9: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Normal Function: </font></TD></TR><TR><TD colspan=\"2\">" + data.getDv()+"</TD></TR>");
+10: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Renal Impairment:</font></TD></TR><TR><TD>"+ data.getDst() + ": </TD><TD>" + data.getDv2()+"</TD></TR>");
+11: 	out.println("<TR><TD>"+ data.getDst2() + ": </TD><TD>" + data.getDv3()+"</TD></TR>");
+12: 	out.println("<TR><TD>"+ data.getDst3() + ": </TD><TD>" + data.getDv4()+"</TD></TR>");
+13: 	out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\" colspan=\"2\"><font color=\"WHITE\">Dose in Renal Replacement Therapy:</font> </TD></TR><TR><TD>"+ data.getDst4() + ": </TD><TD>" + data.getDv5()+"</TD></TR>");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 5:15:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:15:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:15:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:15:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:15:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7f5fe65c')
+Aug 02, 2013 5:15:52 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Syntax error on token ",", . expected
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+i cannot be resolved or is not a field
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Syntax error on token ",", ; expected
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Type mismatch: cannot convert from int to boolean
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Syntax error on token "++", ; expected after this token
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+getDst cannot be resolved or is not a field
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 15 in the jsp file: /InsertData.jsp
+getName cannot be resolved or is not a field
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+15: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName + " into medicines table</h1></center>");
+16: 	}
+17: 	for(int i=1;i<10;i++){
+18: 		status = db.insertData("medicine_dosage",medicine_id,)
+
+
+An error occurred at line: 17 in the jsp file: /InsertData.jsp
+Syntax error on token(s), misplaced construct(s)
+14: 	if (status == 0){
+15: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName + " into medicines table</h1></center>");
+16: 	}
+17: 	for(int i=1;i<10;i++){
+18: 		status = db.insertData("medicine_dosage",medicine_id,)
+19: 	}
+20: %>
+
+
+An error occurred at line: 18 in the jsp file: /InsertData.jsp
+Syntax error on tokens, delete these tokens
+15: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName + " into medicines table</h1></center>");
+16: 	}
+17: 	for(int i=1;i<10;i++){
+18: 		status = db.insertData("medicine_dosage",medicine_id,)
+19: 	}
+20: %>
+21: <BODY>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Syntax error on token ",", . expected
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+i cannot be resolved or is not a field
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Syntax error on token ",", ; expected
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Type mismatch: cannot convert from int to boolean
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 10 in the jsp file: /InsertData.jsp
+Syntax error on token "++", ; expected after this token
+7: 	int status = db.insertData("medicines",data.getName(),null,null,null,db.getCurrentTimeStamp());
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+getDst cannot be resolved or is not a field
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0,i<8,i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 15 in the jsp file: /InsertData.jsp
+getName cannot be resolved or is not a field
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+15: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName + " into medicines table</h1></center>");
+16: 	}
+17: 	for(int i=1;i<10;i++){
+18: 		status = db.insertData("medicine_dosage",medicine_id,)
+
+
+An error occurred at line: 17 in the jsp file: /InsertData.jsp
+Syntax error on token(s), misplaced construct(s)
+14: 	if (status == 0){
+15: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName + " into medicines table</h1></center>");
+16: 	}
+17: 	for(int i=1;i<10;i++){
+18: 		status = db.insertData("medicine_dosage",medicine_id,)
+19: 	}
+20: %>
+
+
+An error occurred at line: 18 in the jsp file: /InsertData.jsp
+Syntax error on tokens, delete these tokens
+15: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName + " into medicines table</h1></center>");
+16: 	}
+17: 	for(int i=1;i<10;i++){
+18: 		status = db.insertData("medicine_dosage",medicine_id,)
+19: 	}
+20: %>
+21: <BODY>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 5:17:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:17:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:17:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:17:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:17:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1266ada9')
+Aug 02, 2013 5:17:47 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+getDst cannot be resolved or is not a field
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+getDst cannot be resolved or is not a field
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i));
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 5:18:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:18:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:18:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:18:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:18:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@2a789924')
+Aug 02, 2013 5:18:51 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+getDst cannot be resolved or is not a field
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+The method i() is undefined for the type InsertData_jsp
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+Syntax error on token ")", delete this token
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+Syntax error, insert ")" to complete Expression
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+getDst cannot be resolved or is not a field
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+The method i() is undefined for the type InsertData_jsp
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+Syntax error on token ")", delete this token
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+An error occurred at line: 11 in the jsp file: /InsertData.jsp
+Syntax error, insert ")" to complete Expression
+8: 	String medicine_id = db.getID("medicines","medicine_name",data.getName());
+9: 	String[] dst_id = new String[8];
+10: 	for(int i=0;i<8;i++){
+11: 		dst_id[i] = db.getID("dosage_sub_types","dosage_sub_type_description",data.getDst+Integer.toString(i)());
+12: 		out.println(dst_id[i]+"</BR>");
+13: 	}
+14: 	if (status == 0){
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 5:23:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:23:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:23:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:23:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:23:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@52d0d407')
+Aug 02, 2013 5:39:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:39:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:39:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:39:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:39:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7312c7dd')
+Aug 02, 2013 5:40:04 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/RenalDrug-Backend] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /InsertData.jsp
+Syntax error on token ",", ; expected
+36: 	if (status == 0){
+37: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName() + " into medicines table</h1></center>");
+38: 	}
+39: 	for (int i=0,i<9;i++){
+40: 		status = db.insertData("medicine_dosage",medicine_id,dt[i],dst_id[i],dv[i],db.getCurrentTimeStamp());
+41: 		if(status == 0){
+42: 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>")
+
+
+An error occurred at line: 42 in the jsp file: /InsertData.jsp
+Syntax error, insert ";" to complete BlockStatements
+39: 	for (int i=0,i<9;i++){
+40: 		status = db.insertData("medicine_dosage",medicine_id,dt[i],dst_id[i],dv[i],db.getCurrentTimeStamp());
+41: 		if(status == 0){
+42: 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>")
+43: 		}
+44: 	}
+45: 	if (status == 1) out.println("Successful in  inserting all data");`
+
+
+An error occurred at line: 45 in the jsp file: /InsertData.jsp
+Syntax error on token "Invalid Character", delete this token
+42: 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>")
+43: 		}
+44: 	}
+45: 	if (status == 1) out.println("Successful in  inserting all data");`
+46: %>
+47: <BODY>
+48: </HTML>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /InsertData.jsp
+Syntax error on token ",", ; expected
+36: 	if (status == 0){
+37: 		out.println("<Center><h1>Unsuccessful in inserting: "+ data.getName() + " into medicines table</h1></center>");
+38: 	}
+39: 	for (int i=0,i<9;i++){
+40: 		status = db.insertData("medicine_dosage",medicine_id,dt[i],dst_id[i],dv[i],db.getCurrentTimeStamp());
+41: 		if(status == 0){
+42: 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>")
+
+
+An error occurred at line: 42 in the jsp file: /InsertData.jsp
+Syntax error, insert ";" to complete BlockStatements
+39: 	for (int i=0,i<9;i++){
+40: 		status = db.insertData("medicine_dosage",medicine_id,dt[i],dst_id[i],dv[i],db.getCurrentTimeStamp());
+41: 		if(status == 0){
+42: 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>")
+43: 		}
+44: 	}
+45: 	if (status == 1) out.println("Successful in  inserting all data");`
+
+
+An error occurred at line: 45 in the jsp file: /InsertData.jsp
+Syntax error on token "Invalid Character", delete this token
+42: 			out.println("<Center><h1>Unsuccessful in inserting data into medicine_dosage id: "+ i + " </h1></center>")
+43: 		}
+44: 	}
+45: 	if (status == 1) out.println("Successful in  inserting all data");`
+46: %>
+47: <BODY>
+48: </HTML>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:468)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 02, 2013 5:40:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:40:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:40:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:40:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:40:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7312c7dd')
+Aug 02, 2013 5:46:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 5:46:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 5:46:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 5:46:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 5:46:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@f042592')
+Aug 02, 2013 6:10:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 6:10:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 6:12:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 6:12:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 6:12:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7d66036e')
+Aug 02, 2013 9:38:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 9:38:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 9:42:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 9:42:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 9:42:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@2dbdec86')
+Aug 02, 2013 9:42:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 9:42:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 9:42:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 9:42:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 9:42:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@710ce358')
+Aug 02, 2013 9:44:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 02, 2013 9:44:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 02, 2013 9:44:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 02, 2013 9:44:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 02, 2013 9:44:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@587b6c50')

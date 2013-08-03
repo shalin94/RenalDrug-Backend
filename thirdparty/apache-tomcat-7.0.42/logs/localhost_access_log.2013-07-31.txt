@@ -42,3 +42,7 @@
 127.0.0.1 - - [31/Jul/2013:12:42:31 -0700] "GET /RenalDrug-Backend/Downloads?checksum HTTP/1.1" 200 9236
 127.0.0.1 - - [31/Jul/2013:12:42:31 -0700] "GET /RenalDrug-Backend/Downloads?checksum=false HTTP/1.1" 200 9236
 0:0:0:0:0:0:0:1 - - [31/Jul/2013:15:01:10 -0700] "GET /RenalDrug-Backend/recent.jsp HTTP/1.1" 500 2716
+0:0:0:0:0:0:0:1 - - [31/Jul/2013:20:45:07 -0700] "GET /RenalDrug-Backend/recent.jsp HTTP/1.1" 200 2114
+0:0:0:0:0:0:0:1 - - [31/Jul/2013:20:48:21 -0700] "GET /RenalDrug-Backend/recent.jsp HTTP/1.1" 500 2408
+0:0:0:0:0:0:0:1 - - [31/Jul/2013:20:48:55 -0700] "GET /RenalDrug-Backend/recent.jsp HTTP/1.1" 200 2131
+0:0:0:0:0:0:0:1 - - [31/Jul/2013:20:50:11 -0700] "GET /RenalDrug-Backend/recent.jsp HTTP/1.1" 200 2146
