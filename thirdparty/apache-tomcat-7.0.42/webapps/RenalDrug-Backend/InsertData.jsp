@@ -44,7 +44,7 @@
 	}
 	if (status == 1){
 		out.println("<TABLE border=\"0\" align=\"center\" cellpadding=\"10\">");
-		out.println("<TR><TD align=\"center\" colspan=\"2\">Successful in Inserting the Following Data:</TD></TR>");
+		out.println("<TR><TD align=\"center\" colspan=\"2\"><h1>Successful in Inserting the Following Data:</h1></TD></TR>");
 		out.println("<TR><TD>Medicine Name:</TD>");
 		out.println("<TD>"+data.getName()+"</TD></TR>");
 		out.println("<TR bgcolor=\"BLACK\"><TD align=\"center\"colspan=\"2\"><font color=\"WHITE\">Dose in Normal Renal Function:</font></TD></TR>");

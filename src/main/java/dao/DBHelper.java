@@ -32,24 +32,27 @@ public class DBHelper{
 		return ds.getConnection();
 	}
 
-	public List<MedicineDosage> getRecentMedicines(){
-		List<MedicineDosage> medlist = null;
+	public List<Medicine> getRecentMedicines(){
+		List<Medicine> medlist = null;
 		Connection conn = null;
-		String query = "select m.medicine_name, d.description, dst.dosage_sub_type_description,md.dosage_value, md.date_created, md.date_modified from medicine_dosage md, medicines m, dosage_types d, dosage_sub_types dst where md.medicine_id = m._id and md.dosage_type_id = d._id and md.dosage_sub_type_id = dst._id order by md.date_modified DESC";
+		/*String query = "select m.medicine_name, d.description, dst.dosage_sub_type_description,md.dosage_value, md.date_created, md.date_modified from medicine_dosage md, medicines m, dosage_types d, dosage_sub_types dst where md.medicine_id = m._id and md.dosage_type_id = d._id and md.dosage_sub_type_id = dst._id order by md.date_modified DESC";*/
+		String query = "select _id,medicine_name,date_created,date_modified from medicines order by date_modified DESC";
 		try{
 			conn = this.getConnection();
 			Statement stat = conn.createStatement();
 			ResultSet rs = stat.executeQuery(query);
 			while(rs.next()){
-				MedicineDosage md = new MedicineDosage();
+				Medicine md = new Medicine();
 				md.setName(rs.getString("medicine_name"));
-				md.setDosageType(rs.getString("description"));
+				/*md.setDosageType(rs.getString("description"));
 				md.setDosageSubType(rs.getString("dosage_sub_type_description"));
 				md.setDosageValue(rs.getString("dosage_value"));
+				md.setDateCreated(rs.getString("date_created"));*/
+				md.setID(rs.getString("_id"));
 				md.setDateCreated(rs.getString("date_created"));
 				md.setDateModified(rs.getString("date_modified"));
 				if(medlist == null)
-					medlist = new ArrayList<MedicineDosage>();
+					medlist = new ArrayList<Medicine>();
 				medlist.add(md);	
 			}
 		} catch(Exception e){
@@ -156,6 +159,14 @@ public class DBHelper{
 		return status;
 		
 	}	
+	
+	public FormData getMedData(int id){
+		Connection conn = null;
+		FormData fd = new FormData();
+		String query = "select m.medicine_name,d.description,dst.dosage_sub_type_description,md.dosage_value,m.date_created,m.date_modified from medicine_dosage md, medicines m, dosage_types d, dosage_sub_types dst where md.medicine_id = m._id and md.dosage_type_id = d._id and md.dosage_sub_type_id=dst._id and m.medicine_name = (select medicine_name from medicines where _id='"+Integer.toString(id)+"') order by md.dosage_type_id ASC";
+		
+	}
+
 	public List<DosageSubType> getDosageSubTypes(int dosage_type){
 		List<DosageSubType> dstlist = null;
 		Connection conn = null;
